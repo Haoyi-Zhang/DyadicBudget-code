@@ -1,0 +1,191 @@
+{
+  "all_commands_passed": true,
+  "command_groups": 15,
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "cpu_seconds": 4.459999,
+      "exit_code": 0,
+      "obligation": "unit",
+      "passed": true,
+      "peak_child_rss_kib": 95272,
+      "tests_run": 29,
+      "timed_out": false,
+      "wall_seconds": 4.461189117999993
+    },
+    {
+      "command": "python pilot.py",
+      "cpu_seconds": 0.9391720000000001,
+      "exit_code": 0,
+      "obligation": "pilot",
+      "passed": true,
+      "peak_child_rss_kib": 95272,
+      "result": {
+        "cpu_seconds": 0.238877844,
+        "failures": 0,
+        "negative_control": {
+          "independent_envelope": "3/4",
+          "true_budget": "0"
+        },
+        "oracle_set_points": 3300,
+        "oracle_value_calls": 5550,
+        "peak_rss_kib": 93352,
+        "tests": 701,
+        "wall_seconds": 0.23907566699995186,
+        "wide_gap": {
+          "budget": "1/2",
+          "pieces": 83,
+          "span_bits": 80,
+          "threshold_lower_bound": "1208925819614629174706176"
+        },
+        "workers": 1
+      },
+      "timed_out": false,
+      "wall_seconds": 0.9398211839999249
+    },
+    {
+      "command": "python reproduce.py --suite support",
+      "cpu_seconds": 4.672726999999999,
+      "exit_code": 0,
+      "obligation": "support",
+      "passed": true,
+      "peak_child_rss_kib": 99624,
+      "timed_out": false,
+      "wall_seconds": 4.6780955230000245
+    },
+    {
+      "command": "python reproduce.py --suite envelopes",
+      "cpu_seconds": 8.42318,
+      "exit_code": 0,
+      "obligation": "envelopes",
+      "passed": true,
+      "peak_child_rss_kib": 99624,
+      "timed_out": false,
+      "wall_seconds": 8.429867124999987
+    },
+    {
+      "command": "python reproduce.py --suite periods",
+      "cpu_seconds": 8.309835,
+      "exit_code": 0,
+      "obligation": "periods",
+      "passed": true,
+      "peak_child_rss_kib": 99624,
+      "timed_out": false,
+      "wall_seconds": 8.315878198000064
+    },
+    {
+      "command": "python reproduce.py --suite programs",
+      "cpu_seconds": 4.983106000000003,
+      "exit_code": 0,
+      "obligation": "programs",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 4.98378273000003
+    },
+    {
+      "command": "python reproduce.py --suite scaling",
+      "cpu_seconds": 3.753472999999996,
+      "exit_code": 0,
+      "obligation": "scaling",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 3.7611039060000167
+    },
+    {
+      "command": "python reproduce.py --suite mutations",
+      "cpu_seconds": 0.7163479999999964,
+      "exit_code": 0,
+      "obligation": "mutations",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 0.7169450810000626
+    },
+    {
+      "command": "python reproduce.py --suite baselines",
+      "cpu_seconds": 3.312539000000001,
+      "exit_code": 0,
+      "obligation": "baselines",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 3.319571412000073
+    },
+    {
+      "command": "python reproduce.py --suite separation",
+      "cpu_seconds": 1.5913719999999998,
+      "exit_code": 0,
+      "obligation": "separation",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 1.5926223889999847
+    },
+    {
+      "command": "python reproduce.py --suite fusion",
+      "cpu_seconds": 1.0001400000000018,
+      "exit_code": 0,
+      "obligation": "fusion",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 1.0006941369999822
+    },
+    {
+      "command": "python reproduce.py --suite ablation",
+      "cpu_seconds": 0.7391660000000044,
+      "exit_code": 0,
+      "obligation": "ablation",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 0.7403205900000103
+    },
+    {
+      "command": "python -O reproduce.py --suite periods",
+      "cpu_seconds": 6.229722000000002,
+      "exit_code": 0,
+      "obligation": "optimized_periods",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 6.232205345000011
+    },
+    {
+      "command": "python export_tables.py",
+      "cpu_seconds": 0.7150279999999967,
+      "exit_code": 0,
+      "obligation": "tables",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "timed_out": false,
+      "wall_seconds": 0.7154262400000562
+    },
+    {
+      "command": "python budget.py verify results/example-certificate.json",
+      "cpu_seconds": 0.7629039999999989,
+      "exit_code": 0,
+      "obligation": "example",
+      "passed": true,
+      "peak_child_rss_kib": 103080,
+      "result": {
+        "budget": "1/6",
+        "certificate_replayed": true,
+        "strict_witness_replayed": true
+      },
+      "timed_out": false,
+      "wall_seconds": 0.763943941999969
+    }
+  ],
+  "finite_checks_are_not_general_proofs": true,
+  "optimized_mode_checks": [
+    "unit-test subprocess for pilot",
+    "full periods suite"
+  ],
+  "scientific_mismatches": [],
+  "scope": "One-worker bounded replay of all frozen scientific suites and certificate/table products.",
+  "source": "artifact/run_all.py",
+  "standalone_without_paper": true
+}
